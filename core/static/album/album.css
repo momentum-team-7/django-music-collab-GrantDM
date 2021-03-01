@@ -1,0 +1,19 @@
+body {
+    color: yellow;
+}
+
+p {
+    display: inline;
+}
+
+.albumArtist {
+    color: red;
+}
+
+.albumTitle {
+    color: blue;
+}
+
+.albumDate {
+    color: olive;
+}
