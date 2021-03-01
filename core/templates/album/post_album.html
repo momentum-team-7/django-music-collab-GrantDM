@@ -11,7 +11,7 @@
 <body>
     {% for album in albums %}
         <p>
-        <span class="albumArtist">This is an album by {{ album.artist }}, </span>
+        <span class="albumArtist">This is an album by <a href="http://127.0.0.1:8000/artists">{{ album.artist }}</a>, </span>
         <span class="albumTitle">{{ album.title }}. </span>
         <span class="albumDate">This came out the year {{ album.release_date }}</span>
         <br>
