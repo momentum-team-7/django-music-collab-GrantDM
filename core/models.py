@@ -5,9 +5,17 @@ class User(AbstractUser):
     pass
 
 
+# class Album_title(models.Model):
+#     title = models.CharField(max_length=250)
+
+#     def __str__(self):
+#         return self.title
+
+
 class Artist(models.Model):
     name = models.CharField(max_length=280)
     genre = models.CharField(max_length=50)
+
 
     def __str__(self):
         return self.name
