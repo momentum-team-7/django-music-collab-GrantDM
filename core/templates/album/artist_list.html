@@ -4,8 +4,8 @@
 {% block content %}
 
 {% for artist in artists %}
-    <p>this is {{ artist.name }}'s genre of music, {{ artist.genre }}</p>
-    <p>their albums are </p>
+    <p>this is <a href="{% url 'artist_albums' artist.pk %}">{{ artist.name }}'s</a> genre of music, {{ artist.genre }}</p>
+    <br>
     <br>
 {% endfor %}
 

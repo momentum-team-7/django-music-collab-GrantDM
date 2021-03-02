@@ -17,5 +17,10 @@ def artist_list(request):
 
 
 def artist_albums(request, pk):
-    artist = get_object_or_404(Artist, pk=1)
+    artist = get_object_or_404(Artist, pk=pk)
     return render(request, 'album/artist_albums.html', {'artist': artist})
+
+
+def artist_detail(request, pk):
+    artist = get_object_or_404(Artist, pk=pk)
+    return render(request, 'album/artist_detail.html', {'artist': artist})

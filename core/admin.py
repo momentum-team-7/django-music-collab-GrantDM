@@ -8,4 +8,3 @@ from .models import Artist
 
 admin.site.register(Album)
 admin.site.register(Artist)
-# admin.site.register(Album_title)

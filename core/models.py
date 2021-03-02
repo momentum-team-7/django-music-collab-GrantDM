@@ -15,7 +15,7 @@ class User(AbstractUser):
 class Artist(models.Model):
     name = models.CharField(max_length=280)
     genre = models.CharField(max_length=50)
-
+    year_began = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
         return self.name

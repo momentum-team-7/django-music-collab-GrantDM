@@ -4,8 +4,14 @@
 
 
 
-<h1>{{artist}}</h1>
+<h1>{{artist}}'s Albums</h1>
 
+
+{% for album in artist.albums.all %}
+<p>{{ album.title }}</p>
+<br>
+<br>
+{% endfor %}
 
 
 {% endblock content %} 
