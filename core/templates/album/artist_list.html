@@ -7,6 +7,11 @@
     <p>this is <a href="{% url 'artist_albums' artist.pk %}">{{ artist.name }}'s</a> genre of music, {{ artist.genre }}</p>
     <br>
     <br>
+    <p>For more details on <a href="{% url 'artist_detail' artist.pk %}">{{ artist.name }}</a></p>
+    <br>
+    <br>
 {% endfor %}
+
+<a href="http://127.0.0.1:8000/artist/new">Add Artist</a><br>
 
 {% endblock content %}

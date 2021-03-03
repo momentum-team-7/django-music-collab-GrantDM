@@ -5,13 +5,6 @@ class User(AbstractUser):
     pass
 
 
-# class Album_title(models.Model):
-#     title = models.CharField(max_length=250)
-
-#     def __str__(self):
-#         return self.title
-
-
 class Artist(models.Model):
     name = models.CharField(max_length=280)
     genre = models.CharField(max_length=50)
@@ -25,6 +18,7 @@ class Album(models.Model):
     title = models.CharField(max_length=280)
     release_date = models.IntegerField(blank=True, null=True)
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE, blank=True, null=True, related_name="albums")
+    image = models.ImageField(upload_to='media', blank=True, null=True)
 
     def __str__(self):
         return self.title
