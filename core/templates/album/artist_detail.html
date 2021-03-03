@@ -16,7 +16,9 @@
 <p>Year of first recordings: {{ artist.year_began }}</p>
 <br>
 <br>
-
+<a href="{% url 'delete-artist' pk=artist.pk %}"><button>Destroy Artist</button></a>
+<br>
+<br>
 
 
 {% endblock content %} 

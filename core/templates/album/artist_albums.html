@@ -14,6 +14,9 @@
 <div><img src="{{ album.image.url }}"></div>
 {% endif %}
 <br>
+<a href="{% url 'delete-album' pk=album.pk %}"><button>Destroy Album</button></a>
+<br>
+<br>
 {% endfor %}
 <a href="http://127.0.0.1:8000/albums/new">Add Albums</a><br>
 
